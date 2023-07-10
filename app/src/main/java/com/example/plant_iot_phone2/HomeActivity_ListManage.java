@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -152,6 +153,8 @@ public class HomeActivity_ListManage extends Fragment {
             intent.putExtra("id", listItems.get(position).getId());
             intent.putExtra("name", listItems.get(position).getName());
             intent.putExtra("model", listItems.get(position).getModel());
+            // get model test.
+            //Toast.makeText(getContext(), listItems.get(position).getModel(), Toast.LENGTH_SHORT).show();
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
         }

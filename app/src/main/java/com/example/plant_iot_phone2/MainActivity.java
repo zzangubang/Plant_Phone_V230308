@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -355,6 +356,7 @@ public class MainActivity extends AppCompatActivity {
 
         gValue = new GetValue();
         gValue.execute(getValueURL);
+
         timeTask();
     }
 
@@ -401,14 +403,17 @@ public class MainActivity extends AppCompatActivity {
 
     // 현재 상태 읽어오기.
     class GetValue extends AsyncTask<String, Integer, String> {
+        String postParameters;
         @Override
         protected String doInBackground(String... params) {
             StringBuilder jsonHtml = new StringBuilder();
 
             String serverURL = (String) params[0];
-            String postParameters = "model=" + model;
+            postParameters = "model=" + model;
 
             try {
+                //get model test.
+                //Toast.makeText(getApplicationContext(), postParameters, Toast.LENGTH_SHORT).show();
                 URL phpUrl = new URL(params[0]);
                 HttpURLConnection conn = (HttpURLConnection) phpUrl.openConnection();
 
@@ -449,6 +454,8 @@ public class MainActivity extends AppCompatActivity {
             String fanD = "", fanED = "", ledLD = "", ledRD = "", waterD = "", pumpD = "", modeD = "";
             String errTemp = "", errHumi = "";
             try {
+                //get model test.
+                //toastShow(postParameters);
                 JSONObject jsonObject = new JSONObject(str);
                 JSONArray jsonArray = jsonObject.getJSONArray(TAG_JSON);
 
