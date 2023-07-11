@@ -52,7 +52,7 @@ public class MainActivity_Work_Data_Humi extends Fragment {
     GetDate gDate;
     String getDateURL = "http://hosting.ajplants.com/Plant_valueDate_Android.php";
     GetValue gValue;
-    String getValueURL = "http://hosting.ajplants.com/Plant_humiTable_Android.php";
+    String getValueURL = "http://hosting.ajplants.com/Plant_valueTable_Android.php";
 
     ProgressDialog dialog;
     Toast toast;
@@ -300,7 +300,7 @@ public class MainActivity_Work_Data_Humi extends Fragment {
                     JSONObject item = jsonArray.getJSONObject(i);
 
                     time = item.getString("time");
-                    data = item.getString("data");
+                    data = item.getString("humi");
 
                     TableRow tableRow = new TableRow(getContext());
                     tableRow.setLayoutParams(new ViewGroup.LayoutParams(

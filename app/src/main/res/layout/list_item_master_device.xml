@@ -18,7 +18,7 @@
             android:fontFamily="@font/main_font"
             android:text="AJPLANTs"
             android:textColor="#000000"
-            android:textSize="@dimen/size_15dp"
+            android:textSize="@dimen/size_13dp"
             android:textStyle="bold" />
 
         <TextView
@@ -26,7 +26,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_centerHorizontal="true"
             android:layout_toLeftOf="@+id/userLayout"
             android:layout_toRightOf="@+id/model"
             android:fontFamily="@font/main_font"
@@ -34,7 +33,7 @@
             android:text="0000-00-00"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="@dimen/size_13dp" />
+            android:textSize="@dimen/size_11dp" />
 
 
         <LinearLayout
@@ -60,7 +59,7 @@
                     android:fontFamily="@font/main_font"
                     android:text="suhyun"
                     android:textColor="#850000"
-                    android:textSize="@dimen/size_14dp" />
+                    android:textSize="@dimen/size_13dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -69,7 +68,7 @@
                     android:fontFamily="@font/main_font"
                     android:text="( "
                     android:textColor="#850000"
-                    android:textSize="@dimen/size_14dp" />
+                    android:textSize="@dimen/size_13dp" />
 
                 <TextView
                     android:id="@+id/name"
