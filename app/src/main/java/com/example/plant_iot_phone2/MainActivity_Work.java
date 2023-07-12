@@ -1,5 +1,6 @@
 package com.example.plant_iot_phone2;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -68,6 +69,7 @@ public class MainActivity_Work extends AppCompatActivity {
         });
         button_menu = (ImageView) findViewById(R.id.button_menu); // 메뉴 버튼.
         button_menu.setOnClickListener(new View.OnClickListener() { // 팝업 메뉴 띄우기.
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onClick(View view) {
                 PopupMenu fanPop = new PopupMenu(MainActivity_Work.this, button_menu);

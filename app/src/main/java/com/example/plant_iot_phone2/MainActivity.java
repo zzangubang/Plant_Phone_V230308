@@ -1,5 +1,6 @@
 package com.example.plant_iot_phone2;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -7,6 +8,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
 
     GetValue gValue;
-    String getValueURL = "http://hosting.ajplants.com/Plant_value_Android.php";
+    String getValueURL = "http://hosting.ajplants.com/Plant_valueU_Android.php";
     SendActive sActive;
     String sendCommandURL = "http://hosting.ajplants.com/Plant_command_Android.php";
     GetBle gBle;
@@ -197,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
         fanI = (ImageView) findViewById(R.id.fanI);
         fanStepT = (TextView) findViewById(R.id.fanStepT);
         button_fan.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onClick(View view) {
                 if (fan.equals("off")) {
@@ -234,6 +237,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         button_fan.setOnLongClickListener(new View.OnLongClickListener() { // 팬(내부) 세기 조절.
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public boolean onLongClick(View view) {
                 if (fan.equals("on1") || fan.equals("on2") || fan.equals("on3")) {

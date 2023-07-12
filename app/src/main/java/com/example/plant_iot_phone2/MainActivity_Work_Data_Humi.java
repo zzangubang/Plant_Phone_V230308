@@ -318,7 +318,7 @@ public class MainActivity_Work_Data_Humi extends Fragment {
 
                     // 센서 값 넣기.
                     TextView V1textView = new TextView(getContext());
-                    V1textView.setText(String.format("%.2f", Float.valueOf(data)));
+                    V1textView.setText(data);
                     V1textView.setTypeface(typeface);
                     V1textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 12);
                     V1textView.setPadding(2, 2, 2, 2);

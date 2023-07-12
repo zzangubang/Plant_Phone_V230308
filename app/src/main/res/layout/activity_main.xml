@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".MainActivity">
 
     <!-- 배경 !-->
@@ -294,6 +295,7 @@
                         android:background="@drawable/main_toggle_selector"
                         android:checked="false"
                         android:fontFamily="@font/main_font"
+                        android:textColor="#000000"
                         android:textOff="MANUAL"
                         android:textOn="AUTO"
                         android:textSize="@dimen/size_17dp"
@@ -556,6 +558,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="@dimen/size_5dp"
                     android:layout_weight="8"
+                    android:background="#ffffff"
                     app:tabGravity="fill"
                     app:tabIndicatorColor="#84A56C"
                     app:tabIndicatorGravity="bottom"

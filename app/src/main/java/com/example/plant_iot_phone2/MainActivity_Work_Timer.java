@@ -52,7 +52,7 @@ public class MainActivity_Work_Timer extends Fragment {
     GetAuto gAuto;
     String getAutoURL = "http://hosting.ajplants.com/Plant_autoG_Android.php";
     SendAuto sAuto;
-    String sendAutoURL = "http://hosting.ajplants.com/Plant_autoSU_Android.php";
+    String sendAutoURL = "http://hosting.ajplants.com/Plant_autoS_Android.php";
 
     String model = "";
     ProgressDialog dialog;
