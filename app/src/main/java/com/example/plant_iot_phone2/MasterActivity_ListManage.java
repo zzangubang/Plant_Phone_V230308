@@ -41,7 +41,6 @@ public class MasterActivity_ListManage extends Fragment {
     ImageView button_delete;
     // 모델 추가 버튼.
     LinearLayout button_add;
-
     // ListView.
     ListView list;
     Model_ListAdapter listAdapter;

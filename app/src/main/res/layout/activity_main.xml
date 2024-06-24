@@ -116,36 +116,71 @@
                     android:textColor="#000000"
                     android:textSize="@dimen/size_10dp" />
 
-                <RelativeLayout
-                    android:id="@+id/tempLayout"
+                <LinearLayout
                     android:layout_width="@dimen/size_70dp"
                     android:layout_height="@dimen/size_70dp"
-                    android:background="@drawable/main_value_selector">
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/errTemp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/size_5dp"
-                        android:layout_marginTop="@dimen/size_5dp"
-                        android:layout_marginEnd="@dimen/size_5dp"
-                        android:layout_marginBottom="@dimen/size_5dp"
-                        android:fontFamily="@font/main_font"
-                        android:text=""
-                        android:textColor="#000000"
-                        android:textSize="@dimen/size_7dp" />
+                    <RelativeLayout
+                        android:id="@+id/tempUpLayout"
+                        android:layout_width="@dimen/size_70dp"
+                        android:layout_height="@dimen/size_33dp"
+                        android:layout_marginBottom="@dimen/size_2dp"
+                        android:background="@drawable/main_value_selector">
 
-                    <TextView
-                        android:id="@+id/tempValue"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:fontFamily="@font/num_font"
-                        android:text=""
-                        android:textColor="#000000"
-                        android:textSize="@dimen/size_14dp"
-                        android:textStyle="bold" />
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/errTempU"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:layout_marginTop="@dimen/size_3dp"
+                            android:fontFamily="@font/main_font"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size_5dp" />
+
+                        <TextView
+                            android:id="@+id/tempUpValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/num_font"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size_13dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/tempDownLayout"
+                        android:layout_width="@dimen/size_70dp"
+                        android:layout_height="@dimen/size_33dp"
+                        android:layout_marginBottom="@dimen/size_2dp"
+                        android:background="@drawable/main_value_selector">
+
+                        <TextView
+                            android:id="@+id/errTempD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:layout_marginTop="@dimen/size_3dp"
+                            android:fontFamily="@font/main_font"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size_5dp" />
+
+                        <TextView
+                            android:id="@+id/tempDownValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/num_font"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size_13dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -163,36 +198,71 @@
                     android:textColor="#000000"
                     android:textSize="@dimen/size_10dp" />
 
-                <RelativeLayout
-                    android:id="@+id/humiLayout"
+                <LinearLayout
                     android:layout_width="@dimen/size_70dp"
                     android:layout_height="@dimen/size_70dp"
-                    android:background="@drawable/main_value_selector">
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/errHumi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/size_5dp"
-                        android:layout_marginTop="@dimen/size_5dp"
-                        android:layout_marginEnd="@dimen/size_5dp"
-                        android:layout_marginBottom="@dimen/size_5dp"
-                        android:fontFamily="@font/main_font"
-                        android:text=""
-                        android:textColor="#000000"
-                        android:textSize="@dimen/size_7dp" />
+                    <RelativeLayout
+                        android:id="@+id/humiUpLayout"
+                        android:layout_width="@dimen/size_70dp"
+                        android:layout_height="@dimen/size_33dp"
+                        android:layout_marginBottom="@dimen/size_2dp"
+                        android:background="@drawable/main_value_selector">
 
-                    <TextView
-                        android:id="@+id/humiValue"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:fontFamily="@font/num_font"
-                        android:text=""
-                        android:textColor="#000000"
-                        android:textSize="@dimen/size_14dp"
-                        android:textStyle="bold" />
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/errHumiU"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:layout_marginTop="@dimen/size_3dp"
+                            android:fontFamily="@font/main_font"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size_5dp"  />
+
+                        <TextView
+                            android:id="@+id/humiUpValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/num_font"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size_13dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/humiDownLayout"
+                        android:layout_width="@dimen/size_70dp"
+                        android:layout_height="@dimen/size_33dp"
+                        android:layout_marginBottom="@dimen/size_2dp"
+                        android:background="@drawable/main_value_selector">
+
+                        <TextView
+                            android:id="@+id/errHumiD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:layout_marginTop="@dimen/size_3dp"
+                            android:fontFamily="@font/main_font"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size_5dp"  />
+
+                        <TextView
+                            android:id="@+id/humiDownValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/num_font"
+                            android:text="13.2"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size_13dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -224,7 +294,7 @@
                         android:fontFamily="@font/num_font"
                         android:text=""
                         android:textColor="#000000"
-                        android:textSize="@dimen/size_14dp"
+                        android:textSize="@dimen/size_13dp"
                         android:textStyle="bold" />
                 </RelativeLayout>
             </LinearLayout>
@@ -257,7 +327,7 @@
                         android:fontFamily="@font/num_font"
                         android:text=""
                         android:textColor="#000000"
-                        android:textSize="@dimen/size_14dp"
+                        android:textSize="@dimen/size_13dp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
